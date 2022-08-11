@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'TodoList_FDatabase'`, () => {
+  it(`should have as title 'ToDoList_Firebase'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('TodoList_FDatabase');
+    expect(app.title).toEqual('ToDoList_Firebase');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('TodoList_FDatabase app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('ToDoList_Firebase app is running!');
   });
 });

@@ -1,0 +1,36 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.create-box{
+    width: 300px;
+    margin: 0 auto;
+    height: 160px;
+    border: 1px solid black;
+
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+
+button{
+    margin: 30px 100px 0 210px;
+    width: 80px;
+}
+  
+input {
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 90%;
+}
+
+li {
+    color: black;
+    border: 1px none black;
+    border-radius: 5px;
+    background-color: aquamarine;
+    font-size: 25px;
+    padding-top: 10px;
+}
+

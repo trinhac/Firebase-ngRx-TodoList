@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-firebase-clo": {
+      "hosting": {
+        "TodoList_FDatabase": [
+          "fir-firebase-clo"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-firebase-clo"
+  }
+}

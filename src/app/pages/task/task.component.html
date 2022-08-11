@@ -1,0 +1,19 @@
+<div class="task-create-box">
+    <h3>Create Task</h3>
+    <form class="create-box" [formGroup]="taskCreateForm" (ngSubmit)="submit()">
+        <input id="title" type="text" formControlName="title" placeholder="Enter title"> <br />
+        <input id="deadline" type="date" formControlName="deadline"> <br />
+        <button type="submit()" id="submit-btn">Create</button> <br />
+    </form>
+</div>
+
+
+<h3>List of tasks</h3>
+<div task-box>
+    <ul>
+        <li *ngFor="let task of tasks$ | async">
+            {{ task ["title"] }} - {{ task ["deadline"] }}
+            <nb-icon icon="archive-outline" (click)="delete(task.id)"></nb-icon>
+        </li>
+    </ul>
+</div>

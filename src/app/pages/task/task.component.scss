@@ -27,10 +27,22 @@ input {
 
 li {
     color: black;
-    border: 1px none black;
+    border: 1px solid black;
     border-radius: 5px;
-    background-color: aquamarine;
-    font-size: 25px;
+    background-color: gray;
     padding-top: 10px;
+    padding-left: 20px;
+    width: 180px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+#note-title #note-date-create{
+    border: 1px solid whitesmoke;
+    justify-content: center;
+}
+
+nb-icon{
+    margin-left: 130px;
 }
 

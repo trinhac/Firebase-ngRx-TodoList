@@ -12,8 +12,15 @@
 <div task-box>
     <ul>
         <li *ngFor="let task of tasks$ | async">
-            {{ task ["title"] }} - {{ task ["deadline"] }}
-            <nb-icon icon="archive-outline" (click)="delete(task.id)"></nb-icon>
+            <div class='note-box'>
+                <div id='note-title'>
+                    <pre>Title: {{ task ["title"] }}</pre>
+                </div>
+                <div id='note-date-create'>
+                    <pre>Date create: {{ task ["deadline"] }}</pre>
+                </div>
+                <nb-icon icon="archive-outline" (click)="delete(task.id)"></nb-icon>
+            </div>
         </li>
     </ul>
 </div>
